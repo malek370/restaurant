@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>online order</title>
+        <style>
+             .box {
+            padding: 25px;
+        background-color: chocolate;
+            width: 900px;
+            border: 1px solid black;
+            float:right;}
+            .box ul li {
+                width: 125px;
+                float: left;
+                text-align: center;
+                list-style-type: none;
+                
+            } 
+            .box ul li a{
+                text-decoration: none;
+                color: black;
+            }
+            .box ul li a:hover{
+                background-color: darkgreen;
+                color: white;
+                padding: 15px;
+            }
+            body{
+                background-image: url(ff.jpg);
+            }
+            .order{
+                background-image: url(ord.jpg) ;
+                background-repeat: no-repeat;
+                background-size: 120%;
+                width: 47%;
+                height:750%;
+
+            }
+            .order label:hover{
+                background-color: darkgreen;
+                color: white;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <ul>
+               <li> <a href="page1.html">home</a></li>
+               <li><a href="menu.html">menu</a></li>
+               <li><a href="onor.html">online order</a></li>
+               <li><a href="team.html">team</a></li>
+               <li><a href="coty.html">client of the year</a></li>
+            </ul>
+        </div>
+        <br><br><br><br><br><br><br><br><br>
+        <div class="order">
+            <h3>order your food:</h3>
+            <form>
+                <label for="name">your name</label>
+                <input type="text" id="name" required placeholder="required" ><br><br>
+                <label for="phone">your phone number</label>
+                <input type="tel" id="phone" required placeholder="required" pattern="[0-9]{2}[0-9]{3}[0-9]{3}"><br><br>
+                <label for="adress">adress</label>
+                <input type="text" id="adress" required placeholder="required"><br><br>
+                <label for="start">start</label>
+                <select name="start" id="start">
+                    <option value="brik">brika</option>
+                    <option value="soup">soup</option>
+                    <option value="salad">salad</option>
+                </select><br><br>
+                <label for="dish">dish</label>
+                <select name="dish" id="dish">
+                    <option value="shan tounsi">shan tounsi</option>
+                    <option value="chicken">chicken</option>
+                    <option value="lablebi">lablebi</option>
+                    <option value="kaskrout ton">kaskrout ton</option>
+                </select><br><br>
+                <label for="dessert">dessert</label>
+                <select name="dessert" id="des"><br><br>
+                    <option value="fruits">fruits</option>
+                    <option value="asida">asida</option>
+                    <option value="cake">cake</option>
+                </select><br><br>
+                <label for="drink">drink</label>
+                <select name="drink" id="drink">
+                    <option value="coca cola">coca cola</option>
+                    <option value="juice">juice</option>
+                    <option value="water">water</option>
+                </select><br><br>
+                <label for="other">extra informations</label><br>
+                <textarea name="other" id="other" cols="30" rows="10" placeholder="optional"></textarea>
+                <br><br><input type="submit" >
+            </form>
+        </div>
+    </body>
+</html>
